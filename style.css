@@ -1,0 +1,74 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+/* nav style starts here */
+nav {
+    padding: 45px 240px;
+}
+
+.navber {
+    display: flex;
+
+}
+
+.list {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.follow-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
+.left-nav {
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    align-items: center;
+}
+
+.left-nav img {
+    width: 87px;
+    height: 40px;
+}
+
+.nav-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.title-first-letter {
+    color: #FF42A5;
+}
+
+.right-nav>ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.right-nav ul a {
+    text-decoration: none;
+
+}
+
+.right-nav ul li {
+    list-style: none;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+/* nav style ends here */
