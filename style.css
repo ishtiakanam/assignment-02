@@ -12,21 +12,22 @@ nav {
 
 .navber {
     display: flex;
-
 }
 
 .list {
     font-size: 1.2rem;
     font-weight: 500;
+    color: #3C354F;
 }
 
 .follow-bar {
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
-    padding: 10px;
+    color: #3C354F;
+    padding: 0 10px;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
 }
@@ -72,3 +73,347 @@ nav {
 }
 
 /* nav style ends here */
+
+/* banner section starts here */
+.banner-container {
+    display: flex;
+    width: auto;
+    height: 700px;
+    background-color: #FFF;
+}
+
+.banner-info {
+    height: 700px;
+    background-image: url('./images/banner-bg.png');
+    width: 100%;
+    background-size: contain;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-name {
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-info-details {
+
+    margin-top: 145px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.description {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-1 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 21px 40px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: none;
+    margin-top: 20px;
+}
+
+.btn-2 {
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: 21px 40px;
+    border: none;
+
+
+}
+
+.banner-img img {
+    height: 700px;
+    width: 500px;
+    margin: 0 240px 0 68px;
+}
+
+/* banner section ends here */
+
+/* game section start */
+.game-section {
+    margin-top: 50px;
+}
+
+.card {
+    position: relative;
+}
+
+.card .hover-section {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000075;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.card:hover .hover-section {
+    opacity: 1;
+}
+
+/*  */
+/*  */
+/* .card:hover {
+    .hover-section {
+        position: relative;
+        bottom: 450px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+        width: 300px;
+        height: 400px;
+    }
+
+    .fa-circle-play {
+        background-color: white;
+    }
+
+    .hover-description {
+        font-size: 20px;
+        font-weight: 600;
+        background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+} */
+
+
+
+/*  */
+/*  */
+
+.game-head {
+    text-align: center;
+}
+
+.game-span {
+    color: #8758F1;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+.card .card-image-container {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.card .card-image-container .card .hover-section {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000075;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card .card-image-container:hover .hover-section {
+    opacity: 1;
+}
+
+
+
+.card .card-image-container img {
+    width: 300px;
+    height: 400px;
+}
+
+.game-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+/* game section end */
+
+/* plays-store section */
+.play-store-container {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 110vh;
+}
+
+.play-store-head {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play-store-info {
+    width: 50%;
+    margin-top: 120px;
+}
+
+.play-store-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.play-store-img {
+    width: 634.833px;
+    height: 650px;
+}
+
+.bottom-img {
+    position: relative;
+    bottom: 300px;
+    right: 200px;
+    border: none;
+}
+
+
+/* different-types-game */
+.different-type-games-container {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.different-types-game {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    height: 427px;
+
+}
+
+.games {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    gap: 16px;
+    background-color: #FFF;
+    border-radius: 50px;
+}
+
+.games:hover {
+    border: 1px solid #FF42A5;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* footer */
+footer {
+    max-width: 1920px;
+    max-height: 80vh;
+    background: #0B0223;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 150px 0px;
+}
+
+.title-last-letters {
+    color: #FFFFFF;
+}
+
+.about {
+    color: #FFF;
+
+    display: flex;
+    gap: 60px;
+    margin-top: 40px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 40px;
+    margin: 30px 0;
+    gap: 40px;
+    margin-right: 10px;
+}
+
+.navbar-icon {
+    color: red !important;
+}
+
+/* media quary for phone */
+@media screen and (max-width:576px) {
+
+    .navber,
+    .right-nav>ul {
+        flex-direction: column;
+    }
+
+    nav {
+        height: 500px;
+    }
+
+    .left-nav {
+        margin-left: 50px;
+
+    }
+
+    .right-nav>ul {}
+
+    nav {
+        width: 100%;
+    }
+
+    .banner-container {
+        height: 450px;
+        flex-direction: column-reverse;
+    }
+}
