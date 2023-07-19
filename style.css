@@ -3,7 +3,12 @@
     padding: 0%;
 }
 
-
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 /* nav style starts here */
 nav {
@@ -77,8 +82,8 @@ nav {
 /* banner section starts here */
 .banner-container {
     display: flex;
-    width: auto;
-    height: 700px;
+    width: 100%;
+    height: auto;
     background-color: #FFF;
 }
 
@@ -176,40 +181,6 @@ nav {
     opacity: 1;
 }
 
-/*  */
-/*  */
-/* .card:hover {
-    .hover-section {
-        position: relative;
-        bottom: 450px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        border-radius: 16px;
-
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
-        width: 300px;
-        height: 400px;
-    }
-
-    .fa-circle-play {
-        background-color: white;
-    }
-
-    .hover-description {
-        font-size: 20px;
-        font-weight: 600;
-        background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-} */
-
-
-
-/*  */
-/*  */
 
 .game-head {
     text-align: center;
@@ -277,7 +248,7 @@ nav {
     justify-content: space-between;
     width: 80%;
     margin: auto;
-    height: 110vh;
+    height: auto;
 }
 
 .play-store-head {
@@ -347,7 +318,7 @@ nav {
 /* footer */
 footer {
     max-width: 1920px;
-    max-height: 80vh;
+    height: 50vh;
     background: #0B0223;
     text-align: center;
     align-content: center;
@@ -360,14 +331,29 @@ footer {
 }
 
 .about {
-    color: #FFF;
-
     display: flex;
     gap: 60px;
+    color: #FFF;
     margin-top: 40px;
     justify-content: center;
     font-size: 18px;
     font-weight: 600;
+}
+
+.about2 {
+    display: flex;
+    gap: 60px;
+    color: #FFF;
+    margin-top: 40px;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.copyright {
+    text-align: center;
+    color: #FFF;
+    margin-top: 50px;
 }
 
 .footer-nav {
@@ -392,28 +378,92 @@ footer {
 /* media quary for phone */
 @media screen and (max-width:576px) {
 
-    .navber,
-    .right-nav>ul {
-        flex-direction: column;
-    }
-
     nav {
-        height: 500px;
+        padding: 0;
     }
 
     .left-nav {
-        margin-left: 50px;
-
+        margin-left: 79px;
     }
 
-    .right-nav>ul {}
-
-    nav {
-        width: 100%;
+    .navber,
+    .right-nav>ul,
+    .card-container,
+    .play-store-container {
+        flex-direction: column;
     }
 
     .banner-container {
-        height: 450px;
         flex-direction: column-reverse;
+        width: auto;
+    }
+
+    .play-store-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-img img {
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .play-store-info {
+        width: 100%;
+    }
+
+    .bottom-img {
+        position: relative;
+        bottom: 90px;
+        width: 200px;
+        height: 200px;
+        right: auto;
+        border: none;
+    }
+
+    footer {
+        height: auto;
+    }
+
+
+    .about,
+    .icon {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .different-types-game,
+    .about2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .games {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 80px;
+        gap: 16px;
+        background-color: #FFF;
+        border-radius: 50px;
+    }
+
+    .different-types-game {
+        height: auto;
+        width: 100%;
+
+    }
+
+    .games p {
+        font-size: 20px;
+    }
+
+    .games img {
+        height: 60px;
+        width: 60px;
     }
 }
+
+/* media quary for tablet */
+@media screen and (min-wi) {}
