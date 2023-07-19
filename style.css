@@ -424,6 +424,8 @@ footer {
 
     footer {
         height: auto;
+        padding: 20px;
+        text-align: center;
     }
 
 
@@ -462,6 +464,10 @@ footer {
     .games img {
         height: 60px;
         width: 60px;
+    }
+
+    .card {
+        text-align: center;
     }
 }
 
@@ -507,4 +513,6 @@ footer {
         margin: auto;
         gap: 40px;
     }
+
+
 }
