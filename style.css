@@ -466,4 +466,45 @@ footer {
 }
 
 /* media quary for tablet */
-@media screen and (min-wi) {}
+@media screen and (min-width:576px) and (max-width:992px) {
+
+
+    .navber,
+    .play-store-container {
+        flex-direction: column;
+    }
+
+    .navber {
+        gap: 40px 0;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .different-types-game,
+    .icon {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: auto;
+    }
+
+    .bottom-img {
+        position: relative;
+        bottom: 200px;
+        right: 50px;
+        border: none;
+    }
+
+    .banner-container {
+        width: 80%;
+        margin: auto;
+        gap: 40px;
+    }
+}
